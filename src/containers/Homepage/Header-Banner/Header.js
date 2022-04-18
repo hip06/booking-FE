@@ -56,7 +56,7 @@ class Headertop extends React.Component {
                         </li>
                         <li><b onClick={(event) => this.props.handleClickHeaderItem(event, true)}><FormattedMessage id={"header.healthFacilities"} /></b><span><FormattedMessage id={"header.chooseHospitalClinic"} /></span></li>
                         <li><b onClick={(event) => this.props.handleClickHeaderItem(event, true)}><FormattedMessage id={"header.doctor"} /></b><span><FormattedMessage id={"header.chooseGoodDoctor"} /></span></li>
-                        <li><a target="_blank" href="https://bookingcare.vn/#khamtongquat"><b><FormattedMessage id={"header.services"} /></b><span><FormattedMessage id={"header.generalHealthCheck"} /></span></a></li>
+                        <li><a target="_blank" href="https://bookingcare.vn"><b><FormattedMessage id={"header.services"} /></b><span><FormattedMessage id={"header.generalHealthCheck"} /></span></a></li>
                     </ul>
                 </div>
                 <div className="headertop-items">
