@@ -1,0 +1,196 @@
+.box-doctor-container {
+    // border: 1px solid red;
+    margin: 16px 0;
+    box-shadow: 0 0 10px #999;
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+
+    .info-section {
+        padding: 16px;
+        display: flex;
+        gap: 32px;
+
+        .avatar-doctor {
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            .see-more {
+                color: blue;
+                text-align: center;
+                padding: 8px 0;
+                cursor: pointer;
+
+                &:hover {
+                    color: blueviolet;
+                }
+            }
+        }
+
+        .desc-doctor {
+            .location {
+                i {
+                    padding-right: 12px;
+                }
+            }
+        }
+    }
+
+    .schedule-section {
+        border-left: 1px solid #ccc;
+
+        .select-date {
+            .select-day {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                width: 50%;
+            }
+
+        }
+
+        .content-schedule {
+            padding: 16px;
+
+            .table-time {
+                background-color: rgb(235, 234, 234);
+                border-radius: 5px;
+                padding: 8px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 16px;
+
+                .box-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 7px;
+
+                    .item {
+                        width: 120px;
+                        height: 40px;
+                        background-color: #ccc;
+                        border-radius: 5px;
+                        line-height: 40px;
+                        text-align: center;
+                        margin: 7px;
+                        padding: 0 8px;
+
+                        &.enable-item {
+                            background-color: #fff04b;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #45c3d2;
+                            }
+                        }
+                    }
+                }
+
+                .title-small {
+                    margin-left: 14px;
+                    font-style: italic;
+                    width: 100%;
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+
+
+
+            }
+
+            .tilte-schedule {
+                display: flex;
+                align-items: center;
+
+
+                i {
+                    font-size: 16px;
+                    padding-right: 16px;
+
+                }
+
+                h5 {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        .content-clinic {
+            padding: 16px;
+
+            .tilte-clinic {
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 16px;
+                    padding-right: 16px;
+
+                }
+
+                h5 {
+                    margin: 0 !important;
+                }
+            }
+
+            .table-time {
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+
+                .price {
+
+                    .show-detail {
+                        color: rgba(35, 119, 175, 0.7);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgba(35, 119, 175, 1);
+                        }
+                    }
+
+                    .details {
+                        div {
+                            border: 1px solid #ccc;
+                            margin-top: -1px;
+                            background-color: rgb(233, 230, 230);
+                            padding: 8px;
+                        }
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+}
+
+.select-province {
+    padding-top: 16px;
+
+    select {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}

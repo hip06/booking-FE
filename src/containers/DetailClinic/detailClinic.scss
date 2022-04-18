@@ -1,0 +1,120 @@
+.clinic-detail-container {
+    .content-clinic-big {
+        position: relative;
+        top: 58px;
+        padding-bottom: 32px;
+
+        .top-section {
+            margin: 0 260px;
+
+            .background {
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 250px;
+                }
+
+            }
+
+            .name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 32px;
+                margin-bottom: 32px;
+
+                .name-left {
+                    display: flex;
+
+                    .avatar-clinic {
+                        width: 100px;
+                        height: 100px;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .detail {
+                        margin-left: 16px;
+
+                        h4 {
+                            margin: 16px 0 8px;
+                        }
+
+                        p {
+                            i {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .middle {
+            width: 100%;
+            border: 1px solid rgb(190, 190, 190);
+            height: 40px;
+        }
+
+        .content-section {
+            margin: 0 300px;
+
+            .box-one {
+                display: flex;
+                margin: 32px 0;
+                padding: 16px;
+                background-color: rgb(200, 235, 198);
+                color: rgb(44, 109, 58);
+                border-radius: 5px;
+                align-items: center;
+
+                i {
+                    margin: 0 16px 0 8px;
+                    font-size: 20px;
+                    color: rgb(243, 180, 6);
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .box-two {
+                margin: 32px 0;
+                padding: 16px;
+                background-color: rgb(241, 232, 201);
+                color: rgb(104, 87, 31);
+                border-radius: 5px;
+            }
+
+            .desc-clinic {
+                margin-bottom: 32px;
+
+                h3 {
+                    color: rgb(55, 99, 218);
+                    font-size: 18px;
+                    margin: 32px 0;
+                }
+
+                p {
+                    display: flex;
+                }
+
+                img {
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}

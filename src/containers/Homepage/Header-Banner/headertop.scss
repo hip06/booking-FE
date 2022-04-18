@@ -1,0 +1,139 @@
+.headertop-container {
+    height: 78px;
+    display: flex;
+    background-color: #fff;
+
+    .headertop-items {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        .icon-menu {
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        .box-logo {
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                height: 35px;
+                width: 160px;
+                background: url(https://bookingcare.vn/assets/icon/bookingcare-2020.svg) center center / cover no-repeat;
+
+            }
+
+            .clone-by-me {
+                position: absolute;
+                top: 49px;
+                left: 356px;
+                font-style: italic;
+
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            flex: 2;
+
+            ul {
+                width: 100%;
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                    }
+
+                    b {
+                        cursor: pointer;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 80%;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+
+            }
+        }
+
+        &:nth-child(3) {
+            flex: 1;
+
+            .help {
+                display: flex;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.6);
+                text-decoration: none;
+
+                i {
+                    color: rgb(67, 166, 212);
+                }
+
+                .language {
+                    display: flex;
+                    margin-left: 70px;
+
+                    span {
+                        cursor: pointer;
+
+                        &.active {
+                            color: rgb(241, 10, 10);
+                        }
+                    }
+
+
+                    .line {
+                        width: 2px;
+                        background-color: #000;
+                        height: 20px;
+                        margin: 0 5px;
+                    }
+                }
+
+
+
+            }
+
+            .login-box {
+                margin-left: 100px;
+                // font-style: italic;
+                font-size: 14px;
+                cursor: pointer;
+
+                span {
+                    color: red;
+                    font-style: normal;
+                    font-size: 16px;
+                }
+
+                .go-manage {
+                    cursor: pointer;
+                    color: rgb(21, 10, 175);
+                }
+            }
+
+            .log-out-bookingcare {
+                color: #000;
+                margin-left: 50px;
+                font-size: 18px;
+                padding: 16px;
+            }
+        }
+
+    }
+}

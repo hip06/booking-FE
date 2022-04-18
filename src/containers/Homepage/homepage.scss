@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner {
+    padding: 22.35%;
+    background: url(https://bookingcare.vn/assets/anh/bookingcare-cover-4.jpg) center center /cover no-repeat;
+    display: flex;
+    position: relative;
+    top: 78px;
+    box-sizing: border-box;
+
+    .banner-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            color: white;
+            padding: 100px 0 0;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.6;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .search {
+            background-color: rgb(236, 189, 31);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            border-radius: 31px;
+            position: absolute;
+            top: 30%;
+
+            i {
+                font-size: 18px;
+            }
+
+            input {
+                line-height: 20px;
+                padding: 8px;
+                outline: none;
+                border: none;
+                background-color: rgb(236, 189, 31);
+                width: 400px;
+            }
+        }
+
+        .menu-options {
+            display: flex;
+            width: 100%;
+            padding: 100px 250px;
+            justify-content: space-around;
+            background-image: linear-gradient(0, white, transparent);
+
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+
+                .icon-option {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    display: flex;
+
+                    i {
+                        margin: auto;
+                        font-size: 20px;
+                        color: rgb(55, 117, 211);
+                    }
+                }
+
+                span {
+                    margin: 12px 0;
+                    font-weight: 600;
+                    font-size: 18px;
+                    width: 120px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+.section {
+    &.specialty {
+        padding: 32px 0 16px;
+    }
+
+
+    &.doctor-section {
+        background-color: rgb(243, 243, 243);
+        padding: 32px 0;
+        border: 1px solid #ccc;
+    }
+
+    &.handbook {
+        background-color: rgb(243, 243, 243);
+        border: 1px solid #ccc;
+    }
+
+    &.media {
+        margin: 0 260px;
+        padding: 48px 0 16px;
+
+        .title-media {
+            padding-left: 16px;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 16px 0;
+
+        }
+
+        iframe {
+            padding-left: 16px;
+            margin-top: 16px;
+        }
+
+    }
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+
+.footer {
+    background-color: rgb(243, 243, 243);
+    // position: relative;
+}
+
+.list-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 32px auto;
+
+    .logo-media {
+        width: 150px;
+        height: 50px;
+        margin: 4px;
+        border-radius: 5px;
+
+
+        &:first-child {
+            background: url('../../assets/img_logo-media/cuc-cong-nghe-thong-tin-bo-y-te-2.png') center center / contain no-repeat;
+        }
+
+        &:nth-child(2) {
+            background: url('../../assets/img_logo-media/ictnews.png') center center / contain no-repeat;
+        }
+
+        &:nth-child(3) {
+            background: url('../../assets/img_logo-media/suckhoedoisong.png') center center / contain no-repeat;
+        }
+
+        &:nth-child(4) {
+            background: url('../../assets/img_logo-media/vnexpress.png') center center / contain no-repeat;
+        }
+
+        &:nth-child(5) {
+
+            background-color: rgb(26, 11, 88);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .vtc {
+                width: 120px;
+                height: 35px;
+
+                background: url('../../assets/img_logo-media/vtcgo.png') center center / contain no-repeat;
+            }
+        }
+
+        &:nth-child(6) {
+            background: url('../../assets/img_logo-media/vtcnews.png') center center / contain no-repeat,
+                linear-gradient(0, rgb(138, 13, 13), rgb(138, 13, 13));
+        }
+
+        &:last-child {
+            background: url('../../assets/img_logo-media/vtv1.png') center center / cover no-repeat;
+        }
+    }
+}
+
+// span{
+//     background-image: url('../../assets/img_logo-media/ictnews.png');
+// }

@@ -1,0 +1,48 @@
+.container-page {
+
+    .schedule {
+
+        margin: 32px 300px;
+        height: 300px;
+        padding: 32px;
+        background-color: rgb(224, 224, 224);
+        border-radius: 5px;
+
+        .box-time {
+            display: flex;
+            flex-wrap: wrap;
+
+
+            .item {
+                width: 120px;
+                height: 40px;
+
+                margin: 16px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 5px;
+                background-color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(248, 213, 213);
+                }
+
+                &.active-time {
+                    background-color: rgb(248, 213, 213);
+
+                }
+            }
+        }
+
+    }
+}
+
+.react-datepicker {
+    width: 250px !important;
+    font-size: 16px !important;
+
+    .react-datepicker__month-container {
+        width: 100% !important;
+    }
+}

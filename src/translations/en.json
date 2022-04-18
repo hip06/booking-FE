@@ -1,0 +1,53 @@
+{
+    "header": {
+        "specialty": "Specialty",
+        "healthFacilities": "Health facilities",
+        "doctor": "Doctor",
+        "services": "Examination package",
+        "findDoctorBySpecialty": "Find a doctor by specialty",
+        "chooseHospitalClinic": "Choose a hospital clinic",
+        "chooseGoodDoctor": "Choose a good doctor",
+        "generalHealthCheck": "General health check",
+        "medicalBackground": "MEDICAL BACKGROUND",
+        "comprehensiveHealthCare": "COMPREHENSIVE HEALTH CARE",
+        "help": "Help",
+        "specializedExamination": "Specialized examination",
+        "remoteExamination": "Remote examination",
+        "generalExamination": "General examination",
+        "medicalTest": "Medical test",
+        "mentalHealth": "Mental health",
+        "dentalExamination": "Dental examination",
+        "surgeryPack": "Surgery pack",
+        "medicalProduct": "Medical products",
+        "search": "Find doctors / clinics ..."
+    },
+    "menu": {
+        "welcome": "Welcome",
+        "manage": {
+            "manage": "Manage",
+            "crudUser": "CRUD user",
+            "crudRedux": "CRUD Redux",
+            "doctorManage": "Manage doctors",
+            "adminManage": "Manage admins"
+        },
+        "clinic": {
+            "clinic": "Clinic",
+            "clinicManage": "Manage clinics"
+        },
+        "specialty": {
+            "specManage": "Manage specialties",
+            "specialty": "Specialties"
+        },
+        "handBook": {
+            "handBook": "Handbook",
+            "handBookManage": "Manage handbook"
+        }
+    },
+    "menuDoctor": {
+        "manage": {
+            "manage": "Manage",
+            "scheduleDoctor": "Doctors schedule",
+            "bookingManage": "bookingManage"
+        }
+    }
+}

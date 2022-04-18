@@ -1,0 +1,53 @@
+{
+    "header": {
+        "specialty": "Chuyên khoa",
+        "healthFacilities": "Cơ sở y tế",
+        "doctor": "Bác sĩ",
+        "services": "Gói khám",
+        "findDoctorBySpecialty": "Tìm bác sĩ theo chuyên khoa",
+        "chooseHospitalClinic": "Chọn phòng khám bệnh viện",
+        "chooseGoodDoctor": "Chọn bác sĩ giỏi",
+        "generalHealthCheck": "Khám sức khỏe tổng quát",
+        "medicalBackground": "NỀN TẢNG Y TẾ",
+        "comprehensiveHealthCare": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+        "help": "Hỗ trợ",
+        "specializedExamination": "Khám chuyên khoa",
+        "remoteExamination": "Khám từ xa",
+        "generalExamination": "Khám tổng quát",
+        "medicalTest": "Xét nghiệm y học",
+        "mentalHealth": "Sức khỏe tinh thần",
+        "dentalExamination": "Khám nha khoa",
+        "surgeryPack": "Gói phẫu thuật",
+        "medicalProduct": "Sản phẩm y tế",
+        "search": "Tìm bác sĩ / phòm khám ..."
+    },
+    "menu": {
+        "welcome": "Xin chào",
+        "manage": {
+            "manage": "Quản lý",
+            "crudUser": "CRUD người dùng",
+            "crudRedux": "CRUD Redux",
+            "doctorManage": "Quản lý bác sĩ",
+            "adminManage": "Quản lý admin"
+        },
+        "clinic": {
+            "clinic": "Phòng khám",
+            "clinicManage": "Quản lý phòm khám"
+        },
+        "specialty": {
+            "specManage": "Quản lý chuyên khoa",
+            "specialty": "Chuyên khoa"
+        },
+        "handBook": {
+            "handBook": "Cẩm nang",
+            "handBookManage": "Quản lí cẩm nang"
+        }
+    },
+    "menuDoctor": {
+        "manage": {
+            "manage": "Quản lý",
+            "scheduleDoctor": "Lịch khám bác sĩ",
+            "bookingManage": "Quản lí danh sách cuộc hẹn khám bệnh"
+        }
+    }
+}

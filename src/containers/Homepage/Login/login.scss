@@ -1,0 +1,74 @@
+.login-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(135deg, rgb(121, 252, 160), rgb(250, 198, 85));
+    display: flex;
+    padding: 10px;
+
+    .login-content {
+        width: 400px;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+
+
+        .btn-login {
+            width: 100%;
+            background-image: linear-gradient(135deg, rgb(121, 252, 160), rgb(250, 198, 85));
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            padding: 5px 0;
+            border-radius: 4px;
+        }
+
+        .forgot-pass {
+            text-align: center;
+            font-style: italic;
+            color: #ccc
+        }
+
+        .icon-social {
+            background-color: #ccc;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 10px;
+            color: #fff;
+        }
+
+        .fb {
+            background-color: rgb(70, 55, 206);
+        }
+
+        .gg {
+            background-color: rgb(241, 85, 85);
+        }
+
+        .password {
+            position: relative;
+
+
+            span {
+                position: absolute;
+                top: 27px;
+                right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .pass-login {
+            cursor: pointer;
+            color: red;
+            padding: 16px 105px;
+        }
+    }
+}

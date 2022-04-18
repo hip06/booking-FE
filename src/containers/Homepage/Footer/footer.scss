@@ -1,0 +1,120 @@
+.footer-container {
+    // border: 1px solid red;
+    // height: 300px;
+    margin-top: 58px;
+    line-height: 1.6;
+    border-top: 1px solid #ccc;
+    z-index: 9999;
+    position: relative;
+    // top: 100%;
+
+    .top-footer {
+        padding: 24px 280px;
+
+
+        .content-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .intro {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    margin: 0;
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+
+                img {
+                    width: 200px;
+                    height: 44px;
+                    margin: 16px 0;
+                }
+
+                .logo-ministry {
+                    img {
+                        width: 210px;
+                        height: 80px;
+                        margin: 16px 0;
+                    }
+                }
+            }
+
+            .list-link {
+
+                li {
+                    list-style: none;
+                    padding: 4px 0;
+
+                    a {
+                        text-decoration: none;
+
+
+                    }
+                }
+            }
+
+            // .address {}
+
+        }
+
+        .mobile {
+            display: flex;
+            padding: 16px 0 0;
+            border-top: 1px solid #ccc;
+            align-items: center;
+
+            p {
+                margin: 0;
+
+                span {
+                    color: #324dc7;
+                }
+            }
+
+            i {
+                margin-right: 8px;
+                font-size: 16px;
+
+            }
+        }
+
+    }
+
+    .bottom-footer {
+        background-color: #64b9e5;
+        color: white;
+        height: 78px;
+        display: flex;
+        padding: 12px 280px;
+        justify-content: space-between;
+
+        .logos {
+            font-size: 32px;
+            align-items: center;
+            // position: relative;
+
+
+
+            i {
+                margin: 0 4px;
+
+                &:first-child {
+                    color: #324dc7;
+                }
+
+                &:last-child {
+                    color: #d32f29;
+                }
+
+                &.fa {
+                    background-image: radial-gradient(at center, rgb(255, 255, 255) 63%, transparent 40%);
+                }
+            }
+        }
+    }
+}

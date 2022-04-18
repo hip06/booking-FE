@@ -1,0 +1,85 @@
+.detail-specialty-container {
+    position: relative;
+    top: 42px;
+
+    .content-specialty {
+        position: relative;
+        // top: 58px;
+
+        .toggle {
+            position: absolute;
+            top: calc(100% - 25px);
+            padding: 0 360px;
+            width: 100%;
+            color: rgba(36, 50, 173, 0.7);
+            cursor: pointer;
+
+            &:hover {
+                color: rgba(240, 150, 47, 1);
+                ;
+            }
+        }
+
+
+        .wrap-top-specialty {
+
+            &.actived-hiden-l {
+                width: 100%;
+                height: 180px;
+                overflow: hidden;
+            }
+
+
+            .img {
+                width: 100%;
+                height: 532px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+
+                .gradient-color {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 532px;
+                    background-image: linear-gradient(0, (white), rgba(255, 255, 255, 0.8));
+                }
+            }
+
+            .description-specialty {
+                position: absolute;
+                top: 0;
+                margin: 0 360px;
+                padding: 16px 0;
+
+                &.actived-hiden-s {
+                    width: 100%;
+                    height: 150px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+
+
+    }
+
+    .box-doctors {
+        position: relative;
+        padding-bottom: 32px;
+        // height: 500px;
+        border-top: 1px solid #ccc;
+        background-color: rgb(235, 235, 235);
+        margin-bottom: -58px;
+
+        .item-box {
+            // border: 1px solid red;
+            margin: 0 360px;
+            border-top: 1px solid #ccc;
+        }
+    }
+}
