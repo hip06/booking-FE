@@ -1,7 +1,13 @@
+@import '../../../styles/responsive.scss';
+
 .spec-container {
-    // border: 1px solid blue;
     margin: 0 250px;
     margin-bottom: 33px;
+
+    @include Notdestop {
+        margin: 0 7%;
+    }
+
 
     .title-slick {
         padding-left: 16px;
@@ -9,6 +15,10 @@
         font-weight: 600;
         margin: 16px 0;
         color: black;
+
+        @include Notdestop {
+            margin-top: 68px;
+        }
     }
 
     .slick-list {
@@ -38,7 +48,7 @@
             padding-left: 25px;
             font-size: 16px;
             position: absolute;
-            top: 98%;
+            top: 97%;
             font-weight: 500;
             margin-bottom: 8px;
         }

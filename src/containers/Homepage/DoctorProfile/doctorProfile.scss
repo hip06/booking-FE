@@ -1,3 +1,5 @@
+@import '../../../styles/responsive.scss';
+
 .doctor-profile-page {
 
 
@@ -6,41 +8,60 @@
         position: relative;
         top: 58px;
 
-        .header-infor {
+        .top-section {
+            padding: 16px 350px;
+            border: 1px solid #ccc;
 
-
-            .avatar {
-                background-color: #fff;
-                padding: 16px;
-
-                .box-img {
-                    width: 175px;
-                    height: 175px;
-
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 50%;
-                        border: 1px solid black;
-                        margin-top: 8px;
-                    }
-                }
+            @include Notdestop {
+                padding: 16px 12%;
             }
 
-            .infor {
+            .header-infor {
                 display: flex;
-                flex-direction: column;
 
-                .title-name {
-                    flex: 30%;
-                    font-size: 32px;
-
+                @include Notdestop {
+                    justify-content: space-between;
                 }
 
-                .desc {
-                    flex: 70%;
+                .avatar {
+                    background-color: #fff;
+                    padding: 16px;
+                    width: 20%;
+
+                    .box-img {
+                        width: 175px;
+                        height: 175px;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            border: 1px solid black;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+
+                .infor {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+
+                    @include Notdestop {
+                        width: 75%;
+                    }
+
+                    .title-name {
+                        flex: 30%;
+                        font-size: 32px;
+
+                    }
+
+                    .desc {
+                        flex: 70%;
+                    }
                 }
             }
         }
@@ -163,6 +184,10 @@
 
             .content-text {
                 margin: 0 350px;
+
+                @include Notdestop {
+                    margin: 0 12%;
+                }
             }
         }
 

@@ -1,3 +1,5 @@
+@import '../../styles/responsive.scss';
+
 .clinic-detail-container {
     .content-clinic-big {
         position: relative;
@@ -6,6 +8,10 @@
 
         .top-section {
             margin: 0 260px;
+
+            @include Notdestop {
+                margin: 0 12%;
+            }
 
             .background {
 
@@ -67,6 +73,10 @@
 
         .content-section {
             margin: 0 300px;
+
+            @include Notdestop {
+                margin: 0 12%;
+            }
 
             .box-one {
                 display: flex;

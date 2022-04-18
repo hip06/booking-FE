@@ -1,3 +1,5 @@
+@import '../../../styles/responsive.scss';
+
 .footer-container {
     // border: 1px solid red;
     // height: 300px;
@@ -10,6 +12,10 @@
 
     .top-footer {
         padding: 24px 280px;
+
+        @include Notdestop {
+            padding: 24px 7%;
+        }
 
 
         .content-footer {
@@ -92,6 +98,10 @@
         display: flex;
         padding: 12px 280px;
         justify-content: space-between;
+
+        @include Notdestop {
+            padding: 12px 7%;
+        }
 
         .logos {
             font-size: 32px;

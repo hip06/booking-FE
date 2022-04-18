@@ -1,7 +1,13 @@
+@import '../../../styles/responsive.scss';
+
 .clinic-container {
     // border: 1px solid red;
     padding: 32px 0;
     margin: 0 250px;
+
+    @include Notdestop {
+        margin: 0 7%;
+    }
 
     .title-slick {
         padding-left: 16px;
@@ -48,6 +54,10 @@
             .name-clinic {
                 margin-top: 0px;
                 font-size: 16px;
+
+                @include Notdestop {
+                    margin-top: -7px;
+                }
             }
 
         }

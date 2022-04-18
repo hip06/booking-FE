@@ -1,3 +1,5 @@
+@import '../../../styles/responsive.scss';
+
 .headerSub {
     position: fixed;
     top: 0;
@@ -9,6 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include Notdestop {
+        padding: 0 12%;
+    }
 
     .link-back {
         text-decoration: none;

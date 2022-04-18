@@ -1,3 +1,6 @@
+@import '../../../styles/responsive.scss';
+
+
 .headertop-container {
     height: 78px;
     display: flex;
@@ -10,6 +13,10 @@
         &:first-child {
             flex: 1;
             justify-content: flex-end;
+
+            @include Notdestop {
+                padding-right: 25px;
+            }
         }
 
         .icon-menu {
@@ -33,6 +40,10 @@
                 top: 49px;
                 left: 356px;
                 font-style: italic;
+
+                @include Notdestop {
+                    left: 15%;
+                }
 
                 span {
                     color: red;
@@ -114,6 +125,11 @@
                 // font-style: italic;
                 font-size: 14px;
                 cursor: pointer;
+
+                @include Notdestop {
+                    margin-left: 7%;
+                    font-size: 12px;
+                }
 
                 span {
                     color: red;

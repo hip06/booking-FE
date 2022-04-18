@@ -157,12 +157,12 @@ class DoctorProfile extends React.Component {
                         <>
                             <div className="doctor-profile-container">
                                 {detailsInforDoctor && detailsInforDoctor.Markdown && <>
-                                    <div className="top-section" style={{ padding: '16px 350px', border: '1px solid #ccc' }}>
-                                        <div className="header-infor row">
-                                            <div className="avatar col-2">
+                                    <div className="top-section" >
+                                        <div className="header-infor">
+                                            <div className="avatar">
                                                 <div className="box-img">{srcAvatar && <img src={srcAvatar} alt="avatar-doctor" />}</div>
                                             </div>
-                                            <div className="infor col-10">
+                                            <div className="infor">
                                                 <div className="col-12 title-name">{detailsInforDoctor.positionData && (detailsInforDoctor.positionData.valueVI + ' - ' + detailsInforDoctor.firstName + ' ' + detailsInforDoctor.lastName)}</div>
                                                 <div className="col-12 desc" dangerouslySetInnerHTML={{ __html: detailsInforDoctor.Markdown.introduction }}></div>
                                             </div>
