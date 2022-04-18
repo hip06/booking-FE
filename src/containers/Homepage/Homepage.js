@@ -82,7 +82,7 @@ class Homepage extends React.Component {
                     <div className="section media">
                         <div className="title-media">Truyền thông nói về BookingCare</div>
                         <div className="row d-flex">
-                            {/* <div className="col-6">
+                            <div className="col-6">
                                 <iframe
                                     className="iframe"
                                     about="blank"
@@ -93,7 +93,7 @@ class Homepage extends React.Component {
                                     frameBorder="0"
                                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen />
-                            </div> */}
+                            </div>
                             <div className="list-logo col-6">
                                 <div className="logo-media"></div>
                                 <div className="logo-media"></div>
