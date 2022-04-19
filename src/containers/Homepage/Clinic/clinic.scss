@@ -9,6 +9,12 @@
         margin: 0 7%;
     }
 
+    @include tablet {
+        padding-right: 61px;
+        padding-left: 28px;
+        margin: 0;
+    }
+
     .title-slick {
         padding-left: 16px;
         font-size: 22px;
@@ -29,6 +35,10 @@
             height: 230px;
             padding: 16px;
             background-origin: content-box;
+
+            @include tablet {
+                height: 143px;
+            }
 
             .box-info {
                 height: 100%;
@@ -54,6 +64,7 @@
             .name-clinic {
                 margin-top: 0px;
                 font-size: 16px;
+                text-align: center;
 
                 @include Notdestop {
                     margin-top: -7px;

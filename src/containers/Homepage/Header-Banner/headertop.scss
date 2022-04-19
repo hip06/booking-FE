@@ -45,6 +45,10 @@
                     left: 15%;
                 }
 
+                @include tablet {
+                    left: 9%;
+                }
+
                 span {
                     color: red;
                 }
@@ -61,6 +65,14 @@
                 justify-content: space-around;
                 padding: 0;
                 margin: 0;
+
+                @include tablet {
+                    display: none;
+                }
+
+                @include mobile {
+                    display: none;
+                }
 
                 li {
                     a {
@@ -85,11 +97,19 @@
         &:nth-child(3) {
             flex: 1;
 
+            // @include tablet {
+            //     flex: 2;
+            // }
+
             .help {
                 display: flex;
                 font-weight: 600;
                 color: rgba(0, 0, 0, 0.6);
                 text-decoration: none;
+
+                @include tablet {
+                    display: none;
+                }
 
                 i {
                     color: rgb(67, 166, 212);
@@ -128,6 +148,11 @@
 
                 @include Notdestop {
                     margin-left: 7%;
+                    font-size: 12px;
+                }
+
+                @include tablet {
+                    margin-left: 50px;
                     font-size: 12px;
                 }
 

@@ -57,7 +57,7 @@ class DetailClinic extends React.Component {
                                             <h4>{dataThisClinic.name}</h4>
                                             <p><i className="fas fa-map-marker-alt"></i>{dataThisClinic.address}</p>
                                         </div></div>
-                                    <button className="booking btn btn-warning px-5">Đặt lịch khám</button>
+                                    <button className="booking btn btn-warning px-5">Đặt lịch</button>
                                 </div>
                             </div>
                             <div className="middle"></div>

@@ -11,6 +11,8 @@ import Footer from "./Footer/Footer";
 import Clinic from "./Clinic/Clinic";
 import Handbook from "./Handbook/Handbook";
 import HeaderDetail from "./HeaderDetail/HeaderDetail";
+import NotSupportThisScreen from "./NotSupportThisScreen";
+import { withRouter } from "react-router";
 
 class Homepage extends React.Component {
     constructor(props) {
@@ -18,13 +20,16 @@ class Homepage extends React.Component {
         this.state = {
             isShowHeaderDetial: false,
             titleHeader: null,
-            srcIframe: ''
+            srcIframe: '',
+
         }
     }
     componentDidMount() {
         this.setState({
             srcIframe: 'https://www.youtube.com/embed/FyDQljKtWnI'
         })
+
+        // window.location.reload()
     }
     handleClickHeaderItem = (event, signal) => {
         event.stopPropagation()
@@ -49,6 +54,8 @@ class Homepage extends React.Component {
             { icon: 'fas fa-hospital', text: <FormattedMessage id={"header.medicalProduct"} /> },
         ]
         // console.log('check', document.getElementsByClassName('iframe')[0].contentWindow);
+        // console.log(window.screen.width);
+        // console.log(this.state.isSupport);
 
         return (
             <>
@@ -81,8 +88,8 @@ class Homepage extends React.Component {
                     <div className="section handbook"><Handbook /></div>
                     <div className="section media">
                         <div className="title-media">Truyền thông nói về BookingCare</div>
-                        <div className="row d-flex">
-                            <div className="col-6">
+                        <div className="row box-media">
+                            <div className="video">
                                 <iframe
                                     className="iframe"
                                     about="blank"
@@ -110,8 +117,8 @@ class Homepage extends React.Component {
                     </div>
                     <div className="footer"><Footer /></div>
                 </div>
-
                 {this.state.isShowHeaderDetial && <HeaderDetail handleClickHeaderItem={this.handleClickHeaderItem} titleHeader={this.state.titleHeader} />}
+                <div className="not-support"><NotSupportThisScreen /></div>
             </>
         )
     }
@@ -129,4 +136,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Homepage));

@@ -21,7 +21,9 @@ class Footer extends Component {
                             </div>
                         </div>
                         <div className="list-link">
+                            {/* <div style={{ fontSize: '10px' }}>Link to BookingCare.vn below</div> */}
                             <ul>
+                                <li style={{ fontSize: '11px', color: 'red' }}>To BookingCare.vn below</li>
                                 <li><a href="https://bookingcare.vn/hop-tac-voi-bookingcare">Liên hệ hợp tác</a></li>
                                 <li><a href="https://bookingcare.vn/benh-nhan-thuong-hoi">Câu hỏi thường gặp</a></li>
                                 <li><a href="https://bookingcare.vn/thong-tin/dieu-khoan-su-dung-p7">Điều khoản sử dụng</a></li>

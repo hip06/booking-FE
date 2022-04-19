@@ -62,8 +62,9 @@ class Doctors extends React.Component {
                                 <div className="img">
                                     <div className="box-info">
                                         <img src={new Buffer(item.image, 'base64').toString('binary')} alt="" />
-                                        <div className="name-doctor"><b>{`${item.firstName} ${item.lastName} - ${item.positionData.valueVI}`}</b></div>
-                                        <div className="specialty">{`Khoa ${item.Spec.name}`}</div>
+                                        <div className="name-doctor"><b style={{ display: 'block', color: 'blue' }}>{`${item.firstName} ${item.lastName}`}</b>
+                                            <b className="position-doctor">{item.positionData.valueVI}</b></div>
+                                        <div style={{ textAlign: 'center' }} className="specialty">{`Khoa ${item.Spec.name}`}</div>
                                     </div>
                                 </div>
                             </div>

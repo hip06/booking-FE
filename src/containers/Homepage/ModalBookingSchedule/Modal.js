@@ -32,7 +32,7 @@ class Modal extends React.Component {
             ...this.state,
             item: this.props.item,
             currentDay: this.props.currentDay
-        }, () => console.log(this.state.currentDay))
+        })
     }
 
     handleChangeInput = (event, id) => {

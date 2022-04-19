@@ -16,6 +16,10 @@
         padding: 0 12%;
     }
 
+    @include tablet {
+        padding: 0 5%;
+    }
+
     .link-back {
         text-decoration: none;
         color: white;

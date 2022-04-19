@@ -16,8 +16,16 @@
                 padding: 16px 12%;
             }
 
+            @include tablet {
+                padding: 16px 5%;
+            }
+
             .header-infor {
                 display: flex;
+
+                @include tablet {
+                    justify-content: space-between;
+                }
 
                 @include Notdestop {
                     justify-content: space-between;
@@ -53,6 +61,10 @@
                         width: 75%;
                     }
 
+                    @include tablet {
+                        width: 70%;
+                    }
+
                     .title-name {
                         flex: 30%;
                         font-size: 32px;
@@ -69,6 +81,13 @@
         .header-section {
 
             .schedule {
+                .select-date {
+                    .select-day {
+                        @include tablet {
+                            border: 1px solid red;
+                        }
+                    }
+                }
 
                 .content-schedule {
                     i {
@@ -187,6 +206,10 @@
 
                 @include Notdestop {
                     margin: 0 12%;
+                }
+
+                @include tablet {
+                    margin: 0 5%;
                 }
             }
         }

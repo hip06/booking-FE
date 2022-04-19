@@ -13,6 +13,10 @@
                 margin: 0 12%;
             }
 
+            @include tablet {
+                margin: 0 5%;
+            }
+
             .background {
 
                 img {
@@ -78,6 +82,10 @@
                 margin: 0 12%;
             }
 
+            @include tablet {
+                margin: 0 5%;
+            }
+
             .box-one {
                 display: flex;
                 margin: 32px 0;
@@ -117,6 +125,10 @@
 
                 p {
                     display: flex;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 img {

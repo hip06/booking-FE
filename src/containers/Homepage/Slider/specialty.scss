@@ -8,6 +8,13 @@
         margin: 0 7%;
     }
 
+    @include tablet {
+        padding-right: 61px;
+        padding-left: 28px;
+        margin: 0;
+        padding-top: 32px;
+    }
+
 
     .title-slick {
         padding-left: 16px;
@@ -34,6 +41,10 @@
             height: 230px;
             padding: 16px;
             background-origin: content-box;
+
+            @include tablet {
+                height: 143px;
+            }
 
 
             img {
